@@ -8,6 +8,6 @@ powershell -command " Expand-Archive 'C:\ProgramData\main.zip' 'C:\ProgramData\'
 
 del C:\ProgramData\main.zip
 
-timeout /t 20
+timeout /t 3
 
 start C:\ProgramData\update-main\update.bat
